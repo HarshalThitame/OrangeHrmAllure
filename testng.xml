@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Selenium Allure Suite" parallel="methods" thread-count="2">
+    <test name="Login Test" parallel="methods" thread-count="5">
+        <classes>
+            <class name="testCases.LoginTest">
+                <methods>
+                    <include name="loginWithValidCredentials"/>
+                    <include name="loginWithEmptyCredentials"/>
+                    <include name="loginWithInvalidData"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
