@@ -2,6 +2,7 @@ package base;
 
 import config.ConfigReader;
 import factory.DriverFactory;
+import io.qameta.allure.testng.AllureTestNg;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -12,7 +13,7 @@ import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-@Listeners(TestListener.class)
+@Listeners({TestListener.class, AllureTestNg.class})
 public class BaseTest {
     static {
         // Suppress Selenium JUL logs
