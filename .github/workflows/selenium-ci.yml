@@ -1,0 +1,54 @@
+name: Selenium CI with Grid
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  selenium_tests:
+    runs-on: ubuntu-latest
+    services:
+      selenium_hub:
+        image: selenium/hub:4.21.0
+        ports:
+          - 4444:4444
+
+      chrome_node:
+        image: selenium/node-chrome:4.21.0
+        depends_on: [ selenium_hub ]
+        environment:
+          SE_EVENT_BUS_HOST: selenium_hub
+          SE_EVENT_BUS_PUBLISH_PORT: 4442
+          SE_EVENT_BUS_SUBSCRIBE_PORT: 4443
+
+      firefox_node:
+        image: selenium/node-firefox:4.21.0
+        depends_on: [ selenium_hub ]
+        environment:
+          SE_EVENT_BUS_HOST: selenium_hub
+          SE_EVENT_BUS_PUBLISH_PORT: 4442
+          SE_EVENT_BUS_SUBSCRIBE_PORT: 4443
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Build project
+        run: mvn clean compile --batch-mode
+
+      - name: Run Selenium tests on Grid
+        run: mvn test -Dbrowser=chrome -Denv=remote --batch-mode
+
+      - name: Upload Allure results
+        uses: actions/upload-artifact@v3
+        with:
+          name: allure-results
+          path: target/allure-results

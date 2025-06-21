@@ -30,7 +30,7 @@ public class BaseTest {
     public void setUp() {
         prop = ConfigReader.initProperties();
         String browser = prop.getProperty("browser").trim();
-        String env = prop.getProperty("test.env").trim();
+        String env = prop.getProperty("env").trim();
         DriverFactory.initDriver(browser, env);
         driver = DriverFactory.getDriver();
         driver.get(prop.getProperty("url"));
