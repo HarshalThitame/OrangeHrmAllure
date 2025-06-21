@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1125","Login with invalid credentials using data provider","Selenium Allure Suite","Sat Jun 21 23:54:07 IST 2025","passed","Sat Jun 21 23:54:08 IST 2025","testCases.LoginTest","Login Test","testCases.LoginTest","loginWithInvalidData"
+"","1113","Login with invalid credentials using data provider","Selenium Allure Suite","Sat Jun 21 23:54:11 IST 2025","passed","Sat Jun 21 23:54:12 IST 2025","testCases.LoginTest","Login Test","testCases.LoginTest","loginWithInvalidData"
+"","3616","Login with invalid credentials using data provider","Selenium Allure Suite","Sat Jun 21 23:54:16 IST 2025","passed","Sat Jun 21 23:54:19 IST 2025","testCases.LoginTest","Login Test","testCases.LoginTest","loginWithInvalidData"
+"","2543","Login with valid credentials","Selenium Allure Suite","Sat Jun 21 23:54:02 IST 2025","passed","Sat Jun 21 23:54:04 IST 2025","testCases.LoginTest","Login Test","testCases.LoginTest","loginWithValidCredentials"
+"","1174","Login with invalid credentials using data provider","Selenium Allure Suite","Sat Jun 21 23:53:57 IST 2025","passed","Sat Jun 21 23:53:58 IST 2025","testCases.LoginTest","Login Test","testCases.LoginTest","loginWithInvalidData"
+"","927","Login with empty credentials","Selenium Allure Suite","Sat Jun 21 23:53:53 IST 2025","passed","Sat Jun 21 23:53:54 IST 2025","testCases.LoginTest","Login Test","testCases.LoginTest","loginWithEmptyCredentials"

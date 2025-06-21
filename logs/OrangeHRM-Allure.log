@@ -467,3 +467,82 @@
 2025-06-21 21:11:32 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching 'Invalid Credential' validation messages
 2025-06-21 21:11:33 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Validation messages displayed correctly for username and password
 2025-06-21 21:11:33 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Finished test: loginWithInvalidData =====
+2025-06-21 23:52:30 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\hthit\IdeaProjects\OrangeHrmAllure\testng.xml
+
+2025-06-21 23:52:35 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Starting test: loginWithInvalidData =====
+2025-06-21 23:52:36 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching error messages
+2025-06-21 23:52:36 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Testing with empty username and password
+2025-06-21 23:52:36 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Login submitted
+2025-06-21 23:52:36 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching 'Required' validation messages for username and password
+2025-06-21 23:52:36 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Validation messages displayed correctly for both username and password
+2025-06-21 23:52:36 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Finished test: loginWithInvalidData =====
+2025-06-21 23:52:39 [TestNG-test-Login Test-2] INFO  testCases.LoginTest - ===== Starting test: loginWithEmptyCredentials =====
+2025-06-21 23:52:39 [TestNG-test-Login Test-2] INFO  testCases.LoginTest - Attempting to login with empty username and password
+2025-06-21 23:52:40 [TestNG-test-Login Test-2] INFO  testCases.LoginTest - Login submitted
+2025-06-21 23:52:40 [TestNG-test-Login Test-2] INFO  testCases.LoginTest - Fetching 'Required' validation messages for username and password fields
+2025-06-21 23:52:40 [TestNG-test-Login Test-2] INFO  testCases.LoginTest - Validation messages displayed correctly for both username and password
+2025-06-21 23:52:40 [TestNG-test-Login Test-2] INFO  testCases.LoginTest - ===== Finished test: loginWithEmptyCredentials =====
+2025-06-21 23:52:43 [TestNG-test-Login Test-1] INFO  testCases.LoginTest - ===== Starting test: loginWithValidCredentials =====
+2025-06-21 23:52:44 [TestNG-test-Login Test-1] INFO  testCases.LoginTest - Login submitted successfully
+2025-06-21 23:52:46 [TestNG-test-Login Test-1] INFO  testCases.LoginTest - Test Passed: User is successfully logged in and landed on Dashboard
+2025-06-21 23:52:46 [TestNG-test-Login Test-1] INFO  testCases.LoginTest - ===== Finished test: loginWithValidCredentials =====
+2025-06-21 23:52:49 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Starting test: loginWithInvalidData =====
+2025-06-21 23:52:50 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching error messages
+2025-06-21 23:52:50 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Testing with empty password
+2025-06-21 23:52:50 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Login submitted
+2025-06-21 23:52:50 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching 'Required' validation messages for password
+2025-06-21 23:52:50 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Validation messages displayed correctly for password
+2025-06-21 23:52:50 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Finished test: loginWithInvalidData =====
+2025-06-21 23:52:53 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Starting test: loginWithInvalidData =====
+2025-06-21 23:52:54 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching error messages
+2025-06-21 23:52:54 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Testing with empty username
+2025-06-21 23:52:55 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Login submitted
+2025-06-21 23:52:55 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching 'Required' validation messages for username
+2025-06-21 23:52:55 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Validation messages displayed correctly for username
+2025-06-21 23:52:55 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Finished test: loginWithInvalidData =====
+2025-06-21 23:52:58 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Starting test: loginWithInvalidData =====
+2025-06-21 23:52:59 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching error messages
+2025-06-21 23:52:59 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Testing with invalid username and password
+2025-06-21 23:53:00 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Login submitted
+2025-06-21 23:53:00 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching 'Invalid Credential' validation messages
+2025-06-21 23:53:01 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Validation messages displayed correctly for username and password
+2025-06-21 23:53:01 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Finished test: loginWithInvalidData =====
+2025-06-21 23:53:53 [TestNG-test-Login Test-2] INFO  testCases.LoginTest - ===== Starting test: loginWithEmptyCredentials =====
+2025-06-21 23:53:53 [TestNG-test-Login Test-2] INFO  testCases.LoginTest - Attempting to login with empty username and password
+2025-06-21 23:53:54 [TestNG-test-Login Test-2] INFO  testCases.LoginTest - Login submitted
+2025-06-21 23:53:54 [TestNG-test-Login Test-2] INFO  testCases.LoginTest - Fetching 'Required' validation messages for username and password fields
+2025-06-21 23:53:54 [TestNG-test-Login Test-2] INFO  testCases.LoginTest - Validation messages displayed correctly for both username and password
+2025-06-21 23:53:54 [TestNG-test-Login Test-2] INFO  testCases.LoginTest - ===== Finished test: loginWithEmptyCredentials =====
+2025-06-21 23:53:57 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Starting test: loginWithInvalidData =====
+2025-06-21 23:53:58 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching error messages
+2025-06-21 23:53:58 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Testing with empty username and password
+2025-06-21 23:53:58 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Login submitted
+2025-06-21 23:53:58 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching 'Required' validation messages for username and password
+2025-06-21 23:53:58 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Validation messages displayed correctly for both username and password
+2025-06-21 23:53:58 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Finished test: loginWithInvalidData =====
+2025-06-21 23:54:02 [TestNG-test-Login Test-1] INFO  testCases.LoginTest - ===== Starting test: loginWithValidCredentials =====
+2025-06-21 23:54:02 [TestNG-test-Login Test-1] INFO  testCases.LoginTest - Login submitted successfully
+2025-06-21 23:54:04 [TestNG-test-Login Test-1] INFO  testCases.LoginTest - Test Passed: User is successfully logged in and landed on Dashboard
+2025-06-21 23:54:04 [TestNG-test-Login Test-1] INFO  testCases.LoginTest - ===== Finished test: loginWithValidCredentials =====
+2025-06-21 23:54:07 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Starting test: loginWithInvalidData =====
+2025-06-21 23:54:08 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching error messages
+2025-06-21 23:54:08 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Testing with empty password
+2025-06-21 23:54:08 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Login submitted
+2025-06-21 23:54:08 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching 'Required' validation messages for password
+2025-06-21 23:54:08 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Validation messages displayed correctly for password
+2025-06-21 23:54:08 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Finished test: loginWithInvalidData =====
+2025-06-21 23:54:11 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Starting test: loginWithInvalidData =====
+2025-06-21 23:54:12 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching error messages
+2025-06-21 23:54:12 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Testing with empty username
+2025-06-21 23:54:12 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Login submitted
+2025-06-21 23:54:12 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching 'Required' validation messages for username
+2025-06-21 23:54:12 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Validation messages displayed correctly for username
+2025-06-21 23:54:12 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Finished test: loginWithInvalidData =====
+2025-06-21 23:54:16 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Starting test: loginWithInvalidData =====
+2025-06-21 23:54:17 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching error messages
+2025-06-21 23:54:17 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Testing with invalid username and password
+2025-06-21 23:54:18 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Login submitted
+2025-06-21 23:54:18 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching 'Invalid Credential' validation messages
+2025-06-21 23:54:19 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Validation messages displayed correctly for username and password
+2025-06-21 23:54:19 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Finished test: loginWithInvalidData =====
