@@ -1,7 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","1113","Login with invalid credentials using data provider","Surefire suite","Sat Jun 21 17:45:38 UTC 2025","passed","Sat Jun 21 17:45:39 UTC 2025","testCases.LoginTest","Surefire test","testCases.LoginTest","loginWithInvalidData"
-"","2593","Login with invalid credentials using data provider","Surefire suite","Sat Jun 21 17:45:45 UTC 2025","passed","Sat Jun 21 17:45:47 UTC 2025","testCases.LoginTest","Surefire test","testCases.LoginTest","loginWithInvalidData"
-"","1077","Login with invalid credentials using data provider","Surefire suite","Sat Jun 21 17:45:40 UTC 2025","passed","Sat Jun 21 17:45:41 UTC 2025","testCases.LoginTest","Surefire test","testCases.LoginTest","loginWithInvalidData"
-"","904","Login with empty credentials","Surefire suite","Sat Jun 21 17:45:36 UTC 2025","passed","Sat Jun 21 17:45:37 UTC 2025","testCases.LoginTest","Surefire test","testCases.LoginTest","loginWithEmptyCredentials"
-"","1065","Login with invalid credentials using data provider","Surefire suite","Sat Jun 21 17:45:42 UTC 2025","passed","Sat Jun 21 17:45:44 UTC 2025","testCases.LoginTest","Surefire test","testCases.LoginTest","loginWithInvalidData"
-"","2201","Login with valid credentials","Surefire suite","Sat Jun 21 17:45:33 UTC 2025","passed","Sat Jun 21 17:45:35 UTC 2025","testCases.LoginTest","Surefire test","testCases.LoginTest","loginWithValidCredentials"
