@@ -2,9 +2,9 @@ name: Selenium CI with Grid
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   selenium_tests:
