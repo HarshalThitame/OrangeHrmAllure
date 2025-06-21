@@ -1,14 +1,12 @@
-name: Selenium Grid CI
+name: Selenium CI with Allure Report
 
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
   workflow_dispatch:
 
 jobs:
-  run-selenium-tests:
+  run-tests:
     runs-on: ubuntu-latest
 
     services:
@@ -16,8 +14,7 @@ jobs:
         image: selenium/standalone-chrome:4.21.0
         ports:
           - 4444:4444
-        options: >-
-          --shm-size=2g
+        options: --shm-size=2g
 
     steps:
       - name: Checkout code
@@ -26,17 +23,43 @@ jobs:
       - name: Set up Java
         uses: actions/setup-java@v3
         with:
-          distribution: 'temurin'
-          java-version: '17'
+          distribution: temurin
+          java-version: 17
 
-      - name: Build project
+      - name: Build with Maven
         run: mvn clean compile --batch-mode
 
-      - name: Run Selenium Tests (Remote Chrome)
+      - name: Run Selenium Tests
         run: mvn test -Dbrowser=chrome -Denv=remote --batch-mode
 
-      - name: Upload Allure Results
+      - name: Generate Allure Report
+        run: |
+          sudo npm install -g allure-commandline --unsafe-perm=true
+          allure generate allure-results --clean -o allure-report
+
+      - name: Upload Allure Report Artifact (Optional)
         uses: actions/upload-artifact@v4
         with:
-          name: allure-results
-          path: allure-results
+          name: allure-report
+          path: allure-report
+
+  deploy-allure-report:
+    needs: run-tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Download Allure Report
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-report
+          path: allure-report
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./allure-report
+          publish_branch: gh-pages
