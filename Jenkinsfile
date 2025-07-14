@@ -34,17 +34,17 @@ pipeline {
       parallel {
         stage('Chrome') {
           steps {
-            bat 'mvn test -Dbrowser=chrome -Denv=remote -Dallure.results.directory=target/allure-results-chrome'
+            bat 'mvn test -Dbrowser=chrome -Denv=remote -Dallure.results.directory=target/allure-results/chrome'
           }
         }
         stage('Firefox') {
           steps {
-            bat 'mvn test -Dbrowser=firefox -Denv=remote -Dallure.results.directory=target/allure-results-firefox'
+            bat 'mvn test -Dbrowser=firefox -Denv=remote -Dallure.results.directory=target/allure-results/firefox'
           }
         }
         stage('Edge') {
           steps {
-            bat 'mvn test -Dbrowser=edge -Denv=remote -Dallure.results.directory=target/allure-results-edge'
+            bat 'mvn test -Dbrowser=edge -Denv=remote -Dallure.results.directory=target/allure-results/edge'
           }
         }
       }
