@@ -60,7 +60,6 @@ pipeline {
   post {
     always {
       echo "Cleaning up containers..."
-      bat 'docker-compose -f selenium-grid-docker\\docker-compose.yml down'
     }
     success {
       echo "Build and tests successful!"
