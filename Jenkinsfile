@@ -18,11 +18,11 @@ pipeline {
       }
     }
 
-//     stage('Start Selenium Grid via Docker') {
-//       steps {
-//         bat 'docker-compose -f selenium-grid-docker\\docker-compose.yml up -d'
-//       }
-//     }
+    stage('Start Selenium Grid via Docker') {
+      steps {
+        bat 'docker-compose -f selenium-grid-docker\\docker-compose.yml up -d'
+      }
+    }
 
     stage('Build Project') {
       steps {
@@ -66,7 +66,7 @@ pipeline {
   post {
     always {
       echo "Cleaning up containers..."
-//       bat 'docker-compose -f selenium-grid-docker\\docker-compose.yml down'
+      bat 'docker-compose -f selenium-grid-docker\\docker-compose.yml down'
     }
     success {
       echo "Build and tests successful!"
