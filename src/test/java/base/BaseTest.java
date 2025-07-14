@@ -29,13 +29,27 @@ public class BaseTest {
 
     @BeforeMethod
     public void setUp() {
+        // Load the configuration properties (e.g., browser type, environment, URL, etc.)
         prop = ConfigReader.initProperties();
-        String browser = prop.getProperty("browser").trim();
-        String env = prop.getProperty("env").trim();
+
+        // Read and trim the 'browser' value from the properties file
+//        String browser = prop.getProperty("browser").trim();
+        String browser = System.getProperty("browser").trim();
+
+        // Read and trim the 'env' (environment) value from the properties file (e.g., QA, Staging)
+//        String env = prop.getProperty("env").trim();
+        String env = System.getProperty("env").trim();
+
+        // Initialize the WebDriver based on the browser and environment
         DriverFactory.initDriver(browser, env);
+
+        // Get the WebDriver instance from the DriverFactory
         driver = DriverFactory.getDriver();
+
+        // Navigate to the application URL as specified in the properties file
         driver.get(prop.getProperty("url"));
     }
+
 
     @AfterMethod
     public void tearDown() {
