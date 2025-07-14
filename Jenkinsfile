@@ -34,30 +34,27 @@ pipeline {
       parallel {
         stage('Chrome') {
           steps {
-            bat 'mvn test -Dbrowser=chrome -Denv=remote -Dallure.results.directory=target/allure-results-chrome'
+            bat 'mvn test -Dbrowser=chrome -Denv=remote'
           }
         }
         stage('Firefox') {
           steps {
-            bat 'mvn test -Dbrowser=firefox -Denv=remote -Dallure.results.directory=target/allure-results-firefox'
+            bat 'mvn test -Dbrowser=firefox -Denv=remote'
           }
         }
         stage('Edge') {
           steps {
-            bat 'mvn test -Dbrowser=edge -Denv=remote -Dallure.results.directory=target/allure-results-edge'
+            bat 'mvn test -Dbrowser=edge -Denv=remote'
           }
         }
       }
     }
 
-    stage('Generate Allure Reports') {
+    stage('Generate Allure Report') {
       steps {
-        bat 'allure generate target\\allure-results-chrome --clean -o allure-report-chrome'
-        bat 'allure generate target\\allure-results-firefox --clean -o allure-report-firefox'
-        bat 'allure generate target\\allure-results-edge --clean -o allure-report-edge'
+        bat 'allure generate target\\allure-results --clean -o allure-report'
       }
     }
-
 
     stage('Publish Allure Report') {
       steps {
