@@ -4,6 +4,8 @@ import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -24,6 +26,10 @@ public class DriverManager {
             case "firefox" -> {
                 FirefoxOptions options = new FirefoxOptions();
                 yield env.equalsIgnoreCase("remote") ? createRemoteDriver(options) : new FirefoxDriver(options);
+            }
+            case "edge" -> {
+                EdgeOptions options = new EdgeOptions();
+                yield env.equalsIgnoreCase("remote") ? createRemoteDriver(options) : new EdgeDriver(options);
             }
             default ->
                     throw new IllegalArgumentException("Unsupported browser: " + browser + " Please choose one of the available browsers");
