@@ -18,12 +18,6 @@ pipeline {
       }
     }
 
-//     stage('Start Selenium Grid via Docker') {
-//       steps {
-//         bat 'docker-compose -f selenium-grid-docker\\docker-compose.yml up -d'
-//       }
-//     }
-
     stage('Build Project') {
       steps {
         bat 'mvn clean compile'
