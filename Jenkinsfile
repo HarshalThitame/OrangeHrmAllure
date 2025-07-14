@@ -2,13 +2,13 @@ pipeline {
   agent any
 
   tools {
-    maven 'Maven_3'       // Setup via Global Tools config
-    jdk 'JDK_17'          // Setup via Global Tools config
+    maven 'Maven_3'       // Defined in Jenkins > Global Tool Configuration
+    jdk 'JDK_17'          // Defined in Jenkins > Global Tool Configuration
   }
 
   environment {
-    ALLURE_RESULTS = "target\\allure-results"
-    ALLURE_REPORT = "allure-report"
+    ALLURE_RESULTS = 'target\\allure-results'
+    ALLURE_REPORT = 'allure-report'
   }
 
   stages {
@@ -32,22 +32,22 @@ pipeline {
 
     stage('Run Tests') {
       parallel {
-          Chrome: {
-            steps {
-              bat 'mvn test -Dbrowser=chrome -Denv=local'
-            }
-          },
-          Firefox: {
-            steps {
-              bat 'mvn test -Dbrowser=firefox -Denv=local'
-            }
-          },
-          Edge: {
-            steps {
-              bat 'mvn test -Dbrowser=edge -Denv=local'
-            }
+        Chrome {
+          steps {
+            bat 'mvn test -Dbrowser=chrome -Denv=remote'
           }
         }
+        Firefox {
+          steps {
+            bat 'mvn test -Dbrowser=firefox -Denv=remote'
+          }
+        }
+        Edge {
+          steps {
+            bat 'mvn test -Dbrowser=edge -Denv=remote'
+          }
+        }
+      }
     }
 
     stage('Generate Allure Report') {
@@ -58,7 +58,14 @@ pipeline {
 
     stage('Publish Allure Report') {
       steps {
-        allure includeProperties: false, jdk: '', commandline: 'Allure', results: [[path: 'target/allure-results']]
+        script {
+          allure([
+            includeProperties: false,
+            jdk: '',
+            commandline: 'Allure',
+            results: [[path: 'target/allure-results']]
+          ])
+        }
       }
     }
   }
