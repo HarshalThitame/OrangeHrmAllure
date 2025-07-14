@@ -1,4 +1,4 @@
 "BROKEN","EPIC","FAILED","FEATURE","PASSED","SKIPPED","STORY","UNKNOWN"
-"0","Authentication","0","Login Feature","1","0","Valid user login successfully","0"
 "0","Authentication","0","Login Feature","4","0","Login should show proper error messages for invalid credentials","0"
 "0","Authentication","0","Login Feature","1","0","Show error on required text field","0"
+"0","Authentication","0","Login Feature","1","0","Valid user login successfully","0"
