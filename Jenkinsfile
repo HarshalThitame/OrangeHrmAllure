@@ -34,40 +34,51 @@ pipeline {
       parallel {
         stage('Chrome') {
           steps {
-            bat 'mvn test -Dbrowser=chrome -Denv=remote'
+            bat 'mvn test -Dbrowser=chrome -Denv=remote -Dallure.results.directory=target/allure-results-chrome'
           }
         }
         stage('Firefox') {
           steps {
-            bat 'mvn test -Dbrowser=firefox -Denv=remote'
+            bat 'mvn test -Dbrowser=firefox -Denv=remote -Dallure.results.directory=target/allure-results-firefox'
           }
         }
         stage('Edge') {
           steps {
-            bat 'mvn test -Dbrowser=edge -Denv=remote'
+            bat 'mvn test -Dbrowser=edge -Denv=remote -Dallure.results.directory=target/allure-results-edge'
           }
         }
       }
     }
 
-    stage('Generate Allure Report') {
+    stage('Generate Allure Reports') {
       steps {
-        bat 'allure generate target\\allure-results --clean -o allure-report'
+        bat 'allure generate target\\allure-results-chrome --clean -o allure-report-chrome'
+        bat 'allure generate target\\allure-results-firefox --clean -o allure-report-firefox'
+        bat 'allure generate target\\allure-results-edge --clean -o allure-report-edge'
       }
     }
 
-    stage('Publish Allure Report') {
+    stage('Archive Reports') {
       steps {
-        script {
-          allure([
-            includeProperties: false,
-            jdk: '',
-            commandline: 'Allure',
-            results: [[path: 'target/allure-results']]
-          ])
-        }
+        archiveArtifacts artifacts: 'allure-report-chrome/**', fingerprint: true
+        archiveArtifacts artifacts: 'allure-report-firefox/**', fingerprint: true
+        archiveArtifacts artifacts: 'allure-report-edge/**', fingerprint: true
       }
     }
+
+
+//     stage('Publish Allure Report') {
+//       steps {
+//         script {
+//           allure([
+//             includeProperties: false,
+//             jdk: '',
+//             commandline: 'Allure',
+//             results: [[path: 'target/allure-results']]
+//           ])
+//         }
+//       }
+//     }
   }
 
   post {
