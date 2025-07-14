@@ -31,9 +31,23 @@ pipeline {
     }
 
     stage('Run Tests') {
-      steps {
-        bat 'mvn test -Dbrowser=chrome -Denv=remote'
-      }
+      parallel {
+          Chrome: {
+            steps {
+              bat 'mvn test -Dbrowser=chrome -Denv=local'
+            }
+          },
+          Firefox: {
+            steps {
+              bat 'mvn test -Dbrowser=firefox -Denv=local'
+            }
+          },
+          Edge: {
+            steps {
+              bat 'mvn test -Dbrowser=edge -Denv=local'
+            }
+          }
+        }
     }
 
     stage('Generate Allure Report') {
