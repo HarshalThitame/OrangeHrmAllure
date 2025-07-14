@@ -2,8 +2,8 @@ pipeline {
   agent any
 
   tools {
-    maven 'Maven_3'       // Defined in Jenkins > Global Tool Configuration
-    jdk 'JDK_17'          // Defined in Jenkins > Global Tool Configuration
+    maven 'Maven_3'
+    jdk 'JDK_17'
   }
 
   environment {
@@ -32,17 +32,17 @@ pipeline {
 
     stage('Run Tests') {
       parallel {
-        Chrome {
+        stage('Chrome') {
           steps {
             bat 'mvn test -Dbrowser=chrome -Denv=remote'
           }
         }
-        Firefox {
+        stage('Firefox') {
           steps {
             bat 'mvn test -Dbrowser=firefox -Denv=remote'
           }
         }
-        Edge {
+        stage('Edge') {
           steps {
             bat 'mvn test -Dbrowser=edge -Denv=remote'
           }
