@@ -2,6 +2,7 @@ package base;
 
 import config.ConfigReader;
 import factory.DriverFactory;
+import io.qameta.allure.Allure;
 import io.qameta.allure.testng.AllureTestNg;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
@@ -38,7 +39,11 @@ public class BaseTest {
 
         // Read and trim the 'env' (environment) value from the properties file (e.g., QA, Staging)
 //        String env = prop.getProperty("env").trim();
-        String env = System.getProperty("env").trim();
+        String env = System.getProperty("env", "local").trim();
+
+        Allure.label("browser", browser);
+        Allure.label("environment", env);
+
 
         // Initialize the WebDriver based on the browser and environment
         DriverFactory.initDriver(browser, env);

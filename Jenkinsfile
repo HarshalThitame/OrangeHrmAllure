@@ -50,21 +50,53 @@ pipeline {
       }
     }
 
-    stage('Generate Allure Reports') {
+    stage('Merge Allure Results') {
       steps {
-        bat 'allure generate target\\allure-results-chrome --clean -o allure-report-chrome'
-        bat 'allure generate target\\allure-results-firefox --clean -o allure-report-firefox'
-        bat 'allure generate target\\allure-results-edge --clean -o allure-report-edge'
+        bat '''
+          mkdir target\\allure-results
+          xcopy /E /Y target\\allure-results\\chrome\\* target\\allure-results\\
+          xcopy /E /Y target\\allure-results\\firefox\\* target\\allure-results\\
+          xcopy /E /Y target\\allure-results\\edge\\* target\\allure-results\\
+        '''
       }
     }
 
-    stage('Archive Reports') {
+    stage('Generate Allure Report') {
       steps {
-        archiveArtifacts artifacts: 'allure-report-chrome/**', fingerprint: true
-        archiveArtifacts artifacts: 'allure-report-firefox/**', fingerprint: true
-        archiveArtifacts artifacts: 'allure-report-edge/**', fingerprint: true
+        bat 'allure generate target\\allure-results --clean -o allure-report'
       }
     }
+
+    stage('Publish Allure Report') {
+      steps {
+        script {
+          allure([
+            includeProperties: false,
+            jdk: '',
+            commandline: 'Allure',
+            results: [[path: 'target/allure-results']]
+          ])
+        }
+      }
+    }
+
+
+
+//     stage('Generate Allure Reports') {
+//       steps {
+//         bat 'allure generate target\\allure-results-chrome --clean -o allure-report-chrome'
+//         bat 'allure generate target\\allure-results-firefox --clean -o allure-report-firefox'
+//         bat 'allure generate target\\allure-results-edge --clean -o allure-report-edge'
+//       }
+//     }
+//
+//     stage('Archive Reports') {
+//       steps {
+//         archiveArtifacts artifacts: 'allure-report-chrome/**', fingerprint: true
+//         archiveArtifacts artifacts: 'allure-report-firefox/**', fingerprint: true
+//         archiveArtifacts artifacts: 'allure-report-edge/**', fingerprint: true
+//       }
+//     }
 
 
 //     stage('Publish Allure Report') {
