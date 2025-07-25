@@ -4,7 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import pageObjects.DashBoardPage;
+import pageObjects.DashboardPage;
+import pageObjects.leave.AssignLeavePage;
+import pageObjects.pim.AddEmployeePage;
+import pageObjects.pim.PIMPage;
 
 import java.time.Duration;
 
@@ -20,9 +23,21 @@ public class BasePage {
         log = LoggerFactory.getLogger(this.getClass());
     }
 
-    public DashBoardPage navigateToDashBoard() {
-        return new DashBoardPage(driver);
+    public DashboardPage navigateToDashBoard() {
+        return new DashboardPage(driver);
     }
 
+
+    public AssignLeavePage goToAssignLeavePage() {
+        return new AssignLeavePage(driver);
+    }
+
+    public PIMPage goToPIMPage() {
+        return new PIMPage(driver);
+    }
+
+    public AddEmployeePage goToAddEmployeePage() {
+        return new AddEmployeePage(driver);
+    }
 
 }

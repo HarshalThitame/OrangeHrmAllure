@@ -10,7 +10,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import utils.TestListener;
 
-import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -26,20 +25,19 @@ public class BaseTest {
     }
 
     protected WebDriver driver;
-    protected Properties prop;
 
     @BeforeMethod
     public void setUp() {
         // Load the configuration properties (e.g., browser type, environment, URL, etc.)
-        prop = ConfigReader.initProperties();
+        ConfigReader.loadProperties("qa");
 
         // Read and trim the 'browser' value from the properties file
-//        String browser = prop.getProperty("browser").trim();
-        String browser = System.getProperty("browser").trim();
+        String browser = ConfigReader.get("browser");
+//        String browser = System.getProperty("browser");
 
         // Read and trim the 'env' (environment) value from the properties file (e.g., QA, Staging)
-//        String env = prop.getProperty("env").trim();
-        String env = System.getProperty("env", "local").trim();
+        String env = ConfigReader.get("env");
+//        String env = System.getProperty("env", "local");
 
         Allure.label("browser", browser);
         Allure.label("environment", env);
@@ -52,7 +50,7 @@ public class BaseTest {
         driver = DriverFactory.getDriver();
 
         // Navigate to the application URL as specified in the properties file
-        driver.get(prop.getProperty("url"));
+        driver.get(ConfigReader.get("url"));
     }
 
 
@@ -60,4 +58,17 @@ public class BaseTest {
     public void tearDown() {
         DriverFactory.quitDriver();
     }
+
+
+//    public String takeScreenshot() {
+//        String path = System.getProperty("user.dir") + "\\src\\reports\\screenshots\\";
+//        try {
+//            TakesScreenshot screenshot = ((TakesScreenshot) DriverFactory.getDriver());
+//            File ssFile = screenshot.getScreenshotAs(OutputType.FILE);
+//
+//
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//    }
 }

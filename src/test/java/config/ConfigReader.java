@@ -5,16 +5,25 @@ import java.util.Properties;
 
 public class ConfigReader {
 
-    private static final Properties prop = new Properties();
+    private final static Properties prop = new Properties();
+    private static boolean isLoaded = false;
 
-    public static Properties initProperties() {
-        try {
-            FileInputStream fis = new FileInputStream("src/test/resources/config.properties");
-            prop.load(fis);
 
-        } catch (Exception e) {
-            e.printStackTrace();
+    public static void loadProperties(String env) {
+        String PATH = "src/test/resources/config/" + env + ".properties";
+        if (!isLoaded) {
+            try {
+                FileInputStream file = new FileInputStream(PATH);
+                prop.load(file);
+                isLoaded = true;
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
         }
-        return prop;
     }
+
+    public static String get(String key) {
+        return prop.getProperty(key);
+    }
+
 }

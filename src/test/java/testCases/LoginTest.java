@@ -1,13 +1,14 @@
 package testCases;
 
 import base.BaseTest;
+import config.ConfigReader;
 import factory.DriverFactory;
 import io.qameta.allure.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pageObjects.DashBoardPage;
+import pageObjects.DashboardPage;
 import pageObjects.LoginPage;
 import utils.TestDataProvider;
 
@@ -30,8 +31,8 @@ public class LoginTest extends BaseTest {
 
         LoginPage loginPage = new LoginPage(DriverFactory.getDriver());
 
-        String username = prop.getProperty("username");
-        String password = prop.getProperty("password");
+        String username = ConfigReader.get("username");
+        String password = ConfigReader.get("password");
 
         logger.debug("Logging in with username: {}", username);
 
@@ -39,7 +40,7 @@ public class LoginTest extends BaseTest {
 
         logger.info("Login submitted successfully");
 
-        DashBoardPage dashBoardPage = loginPage.navigateToDashBoard();
+        DashboardPage dashBoardPage = loginPage.navigateToDashBoard();
         String validationText = dashBoardPage.getValidationText();
 
         logger.debug("Validation text on dashboard: {}", validationText);

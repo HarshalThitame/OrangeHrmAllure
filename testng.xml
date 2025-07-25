@@ -9,6 +9,34 @@
                     <include name="loginWithInvalidData"/>
                 </methods>
             </class>
+            <class name="testCases.DashboardTest">
+                <methods>
+                    <include name="verifyDashboardLoadedSuccessfully"/>
+                    <include name="verifyTimeAtWorkWidgetDisplayed"/>
+                    <include name="verifyQuickLaunchButtonsFunctionality"/>
+                </methods>
+            </class>
+            <class name="testCases.leave.AssignLeaveTest">
+                <methods>
+                    <include name="verifyAssignLeavePageFields"/>
+                    <include name="verifyAssignLeaveFormValidationOnEmptyFields"/>
+                    <include name="assignLeaveWithValidData"/>
+                    <include name="verifyPastDateSelectionNotAllowed"/>
+                    <include name="verifyAssignLeaveWithValidData"/>
+                    <include name="verifyValidationWhenFromDateIsAfterToDate"/>
+                </methods>
+            </class>
+            <class name="testCases.pim.AddEmployeeTest">
+                <methods>
+                    <include name="verifyAllFieldsAreVisibleOnAddEmployeePage"/>
+                    <include name="addEmployeeWithMinimumValidData"/>
+                    <include name="verifyCreateLoginDetailsToggleBehavior"/>
+                    <include name="verifyLoginFieldValidationWhenLeftBlank"/>
+                    <include name="validatePasswordAndConfirmPasswordMismatch"/>
+                    <include name="verifyDuplicateEmployeeIdNotAllowed"/>
+                    <include name="verifyDuplicateUsernameNotAllowed"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

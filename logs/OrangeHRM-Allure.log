@@ -1,38 +1,256 @@
-2025-07-14 11:19:25 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Starting test: loginWithInvalidData =====
-2025-07-14 11:19:27 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching error messages
-2025-07-14 11:19:27 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Testing with empty username and password
-2025-07-14 11:19:27 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Login submitted
-2025-07-14 11:19:27 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching 'Required' validation messages for username and password
-2025-07-14 11:19:27 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Validation messages displayed correctly for both username and password
-2025-07-14 11:19:27 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Finished test: loginWithInvalidData =====
-2025-07-14 11:19:28 [TestNG-test-Login Test-1] INFO  testCases.LoginTest - ===== Starting test: loginWithValidCredentials =====
-2025-07-14 11:19:28 [TestNG-test-Login Test-2] INFO  testCases.LoginTest - ===== Starting test: loginWithEmptyCredentials =====
-2025-07-14 11:19:28 [TestNG-test-Login Test-2] INFO  testCases.LoginTest - Attempting to login with empty username and password
-2025-07-14 11:19:29 [TestNG-test-Login Test-1] INFO  testCases.LoginTest - Login submitted successfully
-2025-07-14 11:19:29 [TestNG-test-Login Test-2] INFO  testCases.LoginTest - Login submitted
-2025-07-14 11:19:29 [TestNG-test-Login Test-2] INFO  testCases.LoginTest - Fetching 'Required' validation messages for username and password fields
-2025-07-14 11:19:29 [TestNG-test-Login Test-2] INFO  testCases.LoginTest - Validation messages displayed correctly for both username and password
-2025-07-14 11:19:29 [TestNG-test-Login Test-2] INFO  testCases.LoginTest - ===== Finished test: loginWithEmptyCredentials =====
-2025-07-14 11:19:31 [TestNG-test-Login Test-1] INFO  testCases.LoginTest - Test Passed: User is successfully logged in and landed on Dashboard
-2025-07-14 11:19:31 [TestNG-test-Login Test-1] INFO  testCases.LoginTest - ===== Finished test: loginWithValidCredentials =====
-2025-07-14 11:19:31 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Starting test: loginWithInvalidData =====
-2025-07-14 11:19:32 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching error messages
-2025-07-14 11:19:32 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Testing with empty password
-2025-07-14 11:19:32 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Login submitted
-2025-07-14 11:19:32 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching 'Required' validation messages for password
-2025-07-14 11:19:32 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Validation messages displayed correctly for password
-2025-07-14 11:19:32 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Finished test: loginWithInvalidData =====
-2025-07-14 11:19:53 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Starting test: loginWithInvalidData =====
-2025-07-14 11:19:55 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching error messages
-2025-07-14 11:19:55 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Testing with empty username
-2025-07-14 11:19:55 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Login submitted
-2025-07-14 11:19:55 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching 'Required' validation messages for username
-2025-07-14 11:19:55 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Validation messages displayed correctly for username
-2025-07-14 11:19:55 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Finished test: loginWithInvalidData =====
-2025-07-14 11:20:11 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Starting test: loginWithInvalidData =====
-2025-07-14 11:20:12 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching error messages
-2025-07-14 11:20:12 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Testing with invalid username and password
-2025-07-14 11:20:13 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Login submitted
-2025-07-14 11:20:13 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Fetching 'Invalid Credential' validation messages
-2025-07-14 11:20:15 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - Validation messages displayed correctly for username and password
-2025-07-14 11:20:15 [TestNG-test-Login Test-3] INFO  testCases.LoginTest - ===== Finished test: loginWithInvalidData =====
+2025-07-25 13:24:11 [TestNG-test-Login Test-3] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid e6517a5f-aaaa-49e5-92eb-1fd1ca607a9d not found
+2025-07-25 13:24:11 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 8e64b645-b543-4adf-a459-ab4e0747eec1 not found
+2025-07-25 13:24:11 [TestNG-test-Login Test-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 4bf144af-c907-4aeb-9dbc-f8ba39127c44 not found
+2025-07-25 13:24:11 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 40194670-f5a6-4600-9ced-3050240af0f1 not found
+2025-07-25 13:24:11 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 49d11e11-9df5-4e6a-a481-ff5a1f6dbd86 not found
+2025-07-25 13:24:11 [TestNG-test-Login Test-3] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid e6517a5f-aaaa-49e5-92eb-1fd1ca607a9d not found
+2025-07-25 13:24:11 [TestNG-test-Login Test-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 4bf144af-c907-4aeb-9dbc-f8ba39127c44 not found
+2025-07-25 13:24:11 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 8e64b645-b543-4adf-a459-ab4e0747eec1 not found
+2025-07-25 13:24:11 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 40194670-f5a6-4600-9ced-3050240af0f1 not found
+2025-07-25 13:24:11 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 49d11e11-9df5-4e6a-a481-ff5a1f6dbd86 not found
+2025-07-25 13:24:18 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:18 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:18 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:18 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - ===== Starting test: loginWithInvalidData =====
+2025-07-25 13:24:19 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - Fetching error messages
+2025-07-25 13:24:19 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - Testing with empty username and password
+2025-07-25 13:24:19 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - Login submitted
+2025-07-25 13:24:19 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - Fetching 'Required' validation messages for username and password
+2025-07-25 13:24:19 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - Validation messages displayed correctly for both username and password
+2025-07-25 13:24:19 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - ===== Finished test: loginWithInvalidData =====
+2025-07-25 13:24:19 [TestNG-test-Login Test-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:19 [TestNG-test-Login Test-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:19 [TestNG-test-Login Test-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:19 [TestNG-test-Login Test-1] INFO  testCases.LoginTest - ===== Starting test: loginWithValidCredentials =====
+2025-07-25 13:24:19 [TestNG-test-Login Test-3] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:19 [TestNG-test-Login Test-3] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:19 [TestNG-test-Login Test-3] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:19 [TestNG-test-Login Test-3] INFO  testCases.leave.AssignLeaveTest - ===== Starting test: verifyAssignLeavePageFields =====
+2025-07-25 13:24:19 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 377900ad-9c40-457c-b53c-a246926fda47 not found
+2025-07-25 13:24:19 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 377900ad-9c40-457c-b53c-a246926fda47 not found
+2025-07-25 13:24:19 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:19 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:19 [TestNG-test-Login Test-2] INFO  testCases.DashboardTest - ===== Starting test: verifyDashboardLoadedSuccessfully =====
+2025-07-25 13:24:20 [TestNG-test-Login Test-1] INFO  testCases.LoginTest - Login submitted successfully
+2025-07-25 13:24:20 [TestNG-test-Login Test-3] INFO  testCases.leave.AssignLeaveTest - Login successful. Navigating to Leave > Assign Leave page...
+2025-07-25 13:24:20 [TestNG-test-Login Test-2] INFO  testCases.DashboardTest - Login successful. Checking visibility of key dashboard widgets...
+2025-07-25 13:24:22 [TestNG-test-Login Test-1] INFO  testCases.LoginTest - Test Passed: User is successfully logged in and landed on Dashboard
+2025-07-25 13:24:22 [TestNG-test-Login Test-1] INFO  testCases.LoginTest - ===== Finished test: loginWithValidCredentials =====
+2025-07-25 13:24:22 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:22 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:22 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:22 [TestNG-test-Login Test-4] INFO  testCases.LoginTest - ===== Starting test: loginWithEmptyCredentials =====
+2025-07-25 13:24:22 [TestNG-test-Login Test-4] INFO  testCases.LoginTest - Attempting to login with empty username and password
+2025-07-25 13:24:22 [TestNG-test-Login Test-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid aca2037a-9908-4060-b83c-81b7791ab51f not found
+2025-07-25 13:24:22 [TestNG-test-Login Test-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid aca2037a-9908-4060-b83c-81b7791ab51f not found
+2025-07-25 13:24:22 [TestNG-test-Login Test-2] INFO  testCases.DashboardTest - All major dashboard widgets verified.
+2025-07-25 13:24:22 [TestNG-test-Login Test-2] INFO  testCases.DashboardTest - ===== Finished test: verifyDashboardLoadedSuccessfully =====
+2025-07-25 13:24:22 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 22822e6a-6a4b-494b-9c17-a7b6e4fde39e not found
+2025-07-25 13:24:22 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 22822e6a-6a4b-494b-9c17-a7b6e4fde39e not found
+2025-07-25 13:24:23 [TestNG-test-Login Test-4] INFO  testCases.LoginTest - Login submitted
+2025-07-25 13:24:23 [TestNG-test-Login Test-4] INFO  testCases.LoginTest - Fetching 'Required' validation messages for username and password fields
+2025-07-25 13:24:23 [TestNG-test-Login Test-4] INFO  testCases.LoginTest - Validation messages displayed correctly for both username and password
+2025-07-25 13:24:23 [TestNG-test-Login Test-4] INFO  testCases.LoginTest - ===== Finished test: loginWithEmptyCredentials =====
+2025-07-25 13:24:23 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 352ff726-bc9b-47ff-9f99-aac67685dca2 not found
+2025-07-25 13:24:23 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 352ff726-bc9b-47ff-9f99-aac67685dca2 not found
+2025-07-25 13:24:23 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:23 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:23 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:23 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - ===== Starting test: loginWithInvalidData =====
+2025-07-25 13:24:23 [TestNG-test-Login Test-3] INFO  testCases.leave.AssignLeaveTest - Verifying visibility of form elements on Assign Leave page...
+2025-07-25 13:24:24 [TestNG-test-Login Test-3] INFO  testCases.leave.AssignLeaveTest - All required fields verified on Assign Leave page.
+2025-07-25 13:24:24 [TestNG-test-Login Test-3] INFO  testCases.leave.AssignLeaveTest - ===== Finished test: verifyAssignLeavePageFields =====
+2025-07-25 13:24:24 [TestNG-test-Login Test-3] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 072916fa-7f67-4c41-b97d-e44ce70f1ecc not found
+2025-07-25 13:24:24 [TestNG-test-Login Test-3] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 072916fa-7f67-4c41-b97d-e44ce70f1ecc not found
+2025-07-25 13:24:25 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - Fetching error messages
+2025-07-25 13:24:25 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - Testing with empty password
+2025-07-25 13:24:25 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - Login submitted
+2025-07-25 13:24:25 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - Fetching 'Required' validation messages for password
+2025-07-25 13:24:25 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - Validation messages displayed correctly for password
+2025-07-25 13:24:25 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - ===== Finished test: loginWithInvalidData =====
+2025-07-25 13:24:25 [TestNG-test-Login Test-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:25 [TestNG-test-Login Test-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:25 [TestNG-test-Login Test-1] INFO  testCases.DashboardTest - ===== Starting test: verifyTimeAtWorkWidgetDisplayed =====
+2025-07-25 13:24:25 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 948931c1-977d-4c9d-91f5-76e6432e8b34 not found
+2025-07-25 13:24:25 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 948931c1-977d-4c9d-91f5-76e6432e8b34 not found
+2025-07-25 13:24:25 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:25 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:25 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:25 [TestNG-test-Login Test-2] INFO  testCases.leave.AssignLeaveTest - ===== Starting test: verifyAssignLeaveFormValidationOnEmptyFields =====
+2025-07-25 13:24:26 [TestNG-test-Login Test-1] INFO  testCases.DashboardTest - Logged in successfully. Verifying 'Time at Work' widget...
+2025-07-25 13:24:26 [TestNG-test-Login Test-2] INFO  testCases.leave.AssignLeaveTest - Login successful. Navigating to Leave > Assign Leave page...
+2025-07-25 13:24:28 [TestNG-test-Login Test-3] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:28 [TestNG-test-Login Test-3] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:28 [TestNG-test-Login Test-3] INFO  testCases.DashboardTest - ===== Starting test: verifyQuickLaunchButtonsFunctionality =====
+2025-07-25 13:24:28 [TestNG-test-Login Test-1] INFO  testCases.DashboardTest - 'Time at Work' widget verified successfully.
+2025-07-25 13:24:28 [TestNG-test-Login Test-1] INFO  testCases.DashboardTest - ===== Finished test: verifyTimeAtWorkWidgetDisplayed =====
+2025-07-25 13:24:28 [TestNG-test-Login Test-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 744254f8-8924-47f2-9e01-ff5a14a593d1 not found
+2025-07-25 13:24:28 [TestNG-test-Login Test-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 744254f8-8924-47f2-9e01-ff5a14a593d1 not found
+2025-07-25 13:24:28 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:28 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:28 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:28 [TestNG-test-Login Test-4] INFO  testCases.pim.AddEmployeeTest - ===== Starting test: verifyAllFieldsAreVisibleOnAddEmployeePage =====
+2025-07-25 13:24:29 [TestNG-test-Login Test-3] INFO  testCases.DashboardTest - Clicking 'Assign Leave' button...
+2025-07-25 13:24:30 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:30 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:30 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:30 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - ===== Starting test: loginWithInvalidData =====
+2025-07-25 13:24:30 [TestNG-test-Login Test-2] INFO  testCases.leave.AssignLeaveTest - Clicking on Assign button without entering any required fields
+2025-07-25 13:24:30 [TestNG-test-Login Test-2] INFO  testCases.leave.AssignLeaveTest - Validating error messages for required fields...
+2025-07-25 13:24:30 [TestNG-test-Login Test-2] INFO  testCases.leave.AssignLeaveTest - Required field validations verified successfully.
+2025-07-25 13:24:30 [TestNG-test-Login Test-2] INFO  testCases.leave.AssignLeaveTest - ===== Finished test: verifyAssignLeaveFormValidationOnEmptyFields =====
+2025-07-25 13:24:30 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - Fetching error messages
+2025-07-25 13:24:30 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - Testing with empty username
+2025-07-25 13:24:30 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 7f14eb49-d57e-4c95-b42d-68f3ce50dec9 not found
+2025-07-25 13:24:30 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 7f14eb49-d57e-4c95-b42d-68f3ce50dec9 not found
+2025-07-25 13:24:31 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - Login submitted
+2025-07-25 13:24:31 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - Fetching 'Required' validation messages for username
+2025-07-25 13:24:31 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - Validation messages displayed correctly for username
+2025-07-25 13:24:31 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - ===== Finished test: loginWithInvalidData =====
+2025-07-25 13:24:31 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 2baee241-8faa-47ee-aa77-2d4e8e2272d6 not found
+2025-07-25 13:24:31 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 2baee241-8faa-47ee-aa77-2d4e8e2272d6 not found
+2025-07-25 13:24:31 [TestNG-test-Login Test-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:31 [TestNG-test-Login Test-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:31 [TestNG-test-Login Test-1] INFO  testCases.leave.AssignLeaveTest - ===== Starting test: assignLeaveWithValidData =====
+2025-07-25 13:24:32 [TestNG-test-Login Test-1] INFO  testCases.leave.AssignLeaveTest - Login successful. Navigating to Leave > Assign Leave page...
+2025-07-25 13:24:33 [TestNG-test-Login Test-3] INFO  testCases.DashboardTest - Returning to Dashboard and clicking 'Timesheets'...
+2025-07-25 13:24:34 [TestNG-test-Login Test-4] INFO  testCases.pim.AddEmployeeTest - All form fields including login fields are visible as expected.
+2025-07-25 13:24:34 [TestNG-test-Login Test-4] INFO  testCases.pim.AddEmployeeTest - ===== Finished test: verifyAllFieldsAreVisibleOnAddEmployeePage =====
+2025-07-25 13:24:35 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 5ae77746-2e8f-4e55-ac6b-0a8158fb74b9 not found
+2025-07-25 13:24:35 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 5ae77746-2e8f-4e55-ac6b-0a8158fb74b9 not found
+2025-07-25 13:24:35 [TestNG-test-Login Test-3] INFO  testCases.DashboardTest - Quick Launch button navigation verified successfully.
+2025-07-25 13:24:35 [TestNG-test-Login Test-3] INFO  testCases.DashboardTest - ===== Finished test: verifyQuickLaunchButtonsFunctionality =====
+2025-07-25 13:24:35 [TestNG-test-Login Test-3] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 46d5b4b1-982d-4ca0-b429-4cd53d734008 not found
+2025-07-25 13:24:35 [TestNG-test-Login Test-3] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 46d5b4b1-982d-4ca0-b429-4cd53d734008 not found
+2025-07-25 13:24:35 [TestNG-test-Login Test-1] INFO  testCases.leave.AssignLeaveTest - Filling form with valid data...
+2025-07-25 13:24:36 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:36 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:36 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:36 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - ===== Starting test: loginWithInvalidData =====
+2025-07-25 13:24:36 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:36 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:36 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:36 [TestNG-test-Login Test-2] INFO  testCases.pim.AddEmployeeTest - ===== Starting test: addEmployeeWithMinimumValidData =====
+2025-07-25 13:24:36 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - Fetching error messages
+2025-07-25 13:24:36 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - Testing with invalid username and password
+2025-07-25 13:24:38 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - Login submitted
+2025-07-25 13:24:38 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - Fetching 'Invalid Credential' validation messages
+2025-07-25 13:24:39 [TestNG-test-Login Test-3] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:39 [TestNG-test-Login Test-3] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:39 [TestNG-test-Login Test-3] INFO  testCases.pim.AddEmployeeTest - ===== Starting test: verifyCreateLoginDetailsToggleBehavior =====
+2025-07-25 13:24:39 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:39 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:39 [TestNG-test-Login Test-4] INFO  testCases.leave.AssignLeaveTest - ===== Starting test: verifyPastDateSelectionNotAllowed =====
+2025-07-25 13:24:39 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - Validation messages displayed correctly for username and password
+2025-07-25 13:24:39 [TestNG-test-Login Test-5] INFO  testCases.LoginTest - ===== Finished test: loginWithInvalidData =====
+2025-07-25 13:24:39 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 39259d0e-892c-464a-a433-8b1744d0b1f3 not found
+2025-07-25 13:24:39 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 39259d0e-892c-464a-a433-8b1744d0b1f3 not found
+2025-07-25 13:24:40 [TestNG-test-Login Test-4] INFO  testCases.leave.AssignLeaveTest - Login successful. Navigating to Assign Leave page...
+2025-07-25 13:24:40 [TestNG-test-Login Test-2] INFO  testCases.pim.AddEmployeeTest - Filling minimum required fields...
+2025-07-25 13:24:41 [TestNG-test-Login Test-2] INFO  testCases.pim.AddEmployeeTest - Clicking Save button...
+2025-07-25 13:24:41 [TestNG-test-Login Test-2] INFO  testCases.pim.AddEmployeeTest - Verifying if redirected to employee details or success indicator...
+2025-07-25 13:24:43 [TestNG-test-Login Test-2] INFO  testCases.pim.AddEmployeeTest - Employee added successfully with minimum data.
+2025-07-25 13:24:43 [TestNG-test-Login Test-2] INFO  testCases.pim.AddEmployeeTest - ===== Finished test: addEmployeeWithMinimumValidData =====
+2025-07-25 13:24:43 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid f123572e-d733-43b6-95a6-e0c5c7490864 not found
+2025-07-25 13:24:43 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid f123572e-d733-43b6-95a6-e0c5c7490864 not found
+2025-07-25 13:24:44 [TestNG-test-Login Test-4] INFO  testCases.leave.AssignLeaveTest - Trying to set past From and To dates: 2025-July-24
+2025-07-25 13:24:44 [TestNG-test-Login Test-3] INFO  testCases.pim.AddEmployeeTest - Toggling 'Create Login Details' ON...
+2025-07-25 13:24:45 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:45 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:45 [TestNG-test-Login Test-5] INFO  testCases.leave.AssignLeaveTest - ===== Starting test: verifyAssignLeaveWithValidData =====
+2025-07-25 13:24:46 [TestNG-test-Login Test-3] INFO  testCases.pim.AddEmployeeTest - Login fields successfully displayed after enabling the toggle.
+2025-07-25 13:24:46 [TestNG-test-Login Test-3] INFO  testCases.pim.AddEmployeeTest - Toggling 'Create Login Details' OFF...
+2025-07-25 13:24:46 [TestNG-test-Login Test-5] INFO  testCases.leave.AssignLeaveTest - Login successful. Navigating to Assign Leave page...
+2025-07-25 13:24:46 [TestNG-test-Login Test-4] INFO  testCases.leave.AssignLeaveTest - Checking validation for past dates...
+2025-07-25 13:24:46 [TestNG-test-Login Test-1] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+2025-07-25 13:24:46 [TestNG-test-Login Test-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 8e32a71c-fca2-49a6-a1e1-d85d33f4a7f6 not found
+2025-07-25 13:24:46 [TestNG-test-Login Test-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 8e32a71c-fca2-49a6-a1e1-d85d33f4a7f6 not found
+2025-07-25 13:24:48 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:48 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:48 [TestNG-test-Login Test-2] INFO  testCases.pim.AddEmployeeTest - ===== Starting test: verifyLoginFieldValidationWhenLeftBlank =====
+2025-07-25 13:24:50 [TestNG-test-Login Test-5] INFO  testCases.leave.AssignLeaveTest - Entering valid employee name: first middle las
+2025-07-25 13:24:54 [TestNG-test-Login Test-2] INFO  testCases.pim.AddEmployeeTest - Enabling 'Create Login Details' toggle...
+2025-07-25 13:24:55 [TestNG-test-Login Test-2] INFO  testCases.pim.AddEmployeeTest - Trying to save with empty login fields...
+2025-07-25 13:24:55 [TestNG-test-Login Test-2] INFO  testCases.pim.AddEmployeeTest - Checking for validation messages on login fields...
+2025-07-25 13:24:57 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+2025-07-25 13:24:57 [TestNG-test-Login Test-2] INFO  testCases.pim.AddEmployeeTest - All validation messages for empty login fields verified.
+2025-07-25 13:24:57 [TestNG-test-Login Test-2] INFO  testCases.pim.AddEmployeeTest - ===== Finished test: verifyLoginFieldValidationWhenLeftBlank =====
+2025-07-25 13:24:57 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 07c1c9b2-bb7a-4485-bed7-2584756ace85 not found
+2025-07-25 13:24:57 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 07c1c9b2-bb7a-4485-bed7-2584756ace85 not found
+2025-07-25 13:24:57 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid f7f27a31-4daa-4c25-b829-4e8267471b6d not found
+2025-07-25 13:24:57 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid f7f27a31-4daa-4c25-b829-4e8267471b6d not found
+2025-07-25 13:24:58 [TestNG-test-Login Test-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:58 [TestNG-test-Login Test-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:24:58 [TestNG-test-Login Test-1] INFO  testCases.leave.AssignLeaveTest - ===== Starting test: assignLeaveWithValidData =====
+2025-07-25 13:25:00 [TestNG-test-Login Test-1] INFO  testCases.leave.AssignLeaveTest - Login successful. Navigating to Leave > Assign Leave page...
+2025-07-25 13:25:01 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+2025-07-25 13:25:01 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 828ad149-3cd7-4453-bd2b-8be497451f45 not found
+2025-07-25 13:25:01 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 828ad149-3cd7-4453-bd2b-8be497451f45 not found
+2025-07-25 13:25:02 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:25:02 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:25:02 [TestNG-test-Login Test-2] INFO  testCases.leave.AssignLeaveTest - ===== Starting test: verifyValidationWhenFromDateIsAfterToDate =====
+2025-07-25 13:25:02 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:25:02 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:25:02 [TestNG-test-Login Test-4] INFO  testCases.leave.AssignLeaveTest - ===== Starting test: verifyPastDateSelectionNotAllowed =====
+2025-07-25 13:25:03 [TestNG-test-Login Test-2] INFO  testCases.leave.AssignLeaveTest - Login successful. Navigating to Assign Leave page...
+2025-07-25 13:25:03 [TestNG-test-Login Test-1] INFO  testCases.leave.AssignLeaveTest - Filling form with valid data...
+2025-07-25 13:25:03 [TestNG-test-Login Test-4] INFO  testCases.leave.AssignLeaveTest - Login successful. Navigating to Assign Leave page...
+2025-07-25 13:25:07 [TestNG-test-Login Test-4] INFO  testCases.leave.AssignLeaveTest - Trying to set past From and To dates: 2025-July-24
+2025-07-25 13:25:07 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:25:07 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:25:07 [TestNG-test-Login Test-5] INFO  testCases.leave.AssignLeaveTest - ===== Starting test: verifyAssignLeaveWithValidData =====
+2025-07-25 13:25:09 [TestNG-test-Login Test-5] INFO  testCases.leave.AssignLeaveTest - Login successful. Navigating to Assign Leave page...
+2025-07-25 13:25:09 [TestNG-test-Login Test-4] INFO  testCases.leave.AssignLeaveTest - Checking validation for past dates...
+2025-07-25 13:25:12 [TestNG-test-Login Test-5] INFO  testCases.leave.AssignLeaveTest - Entering valid employee name: first middle las
+2025-07-25 13:25:14 [TestNG-test-Login Test-1] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+2025-07-25 13:25:14 [TestNG-test-Login Test-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 4cba24c4-4fa4-42d8-9fd5-e965a7dc361a not found
+2025-07-25 13:25:14 [TestNG-test-Login Test-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 4cba24c4-4fa4-42d8-9fd5-e965a7dc361a not found
+2025-07-25 13:25:17 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+2025-07-25 13:25:17 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 33bbc65e-9730-4fa3-9494-22320ab95339 not found
+2025-07-25 13:25:17 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 33bbc65e-9730-4fa3-9494-22320ab95339 not found
+2025-07-25 13:25:20 [TestNG-test-Login Test-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:25:20 [TestNG-test-Login Test-1] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:25:20 [TestNG-test-Login Test-1] INFO  testCases.pim.AddEmployeeTest - ===== Starting test: validatePasswordAndConfirmPasswordMismatch =====
+2025-07-25 13:25:20 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+2025-07-25 13:25:20 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid fcc94ffc-e9e1-4571-9213-282c810de44e not found
+2025-07-25 13:25:20 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid fcc94ffc-e9e1-4571-9213-282c810de44e not found
+2025-07-25 13:25:23 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:25:23 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:25:23 [TestNG-test-Login Test-2] INFO  testCases.leave.AssignLeaveTest - ===== Starting test: verifyValidationWhenFromDateIsAfterToDate =====
+2025-07-25 13:25:23 [TestNG-test-Login Test-2] INFO  testCases.leave.AssignLeaveTest - Login successful. Navigating to Assign Leave page...
+2025-07-25 13:25:24 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+2025-07-25 13:25:24 [TestNG-test-Login Test-1] INFO  testCases.pim.AddEmployeeTest - Filling First Name, Last Name, and enabling Login Details...
+2025-07-25 13:25:24 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid b13184f0-4bc0-4d57-876e-08e99bdd5390 not found
+2025-07-25 13:25:24 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid b13184f0-4bc0-4d57-876e-08e99bdd5390 not found
+2025-07-25 13:25:25 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:25:25 [TestNG-test-Login Test-4] INFO  testCases.pim.AddEmployeeTest - ===== Starting test: verifyDuplicateEmployeeIdNotAllowed =====
+2025-07-25 13:25:26 [TestNG-test-Login Test-1] INFO  testCases.pim.AddEmployeeTest - Clicking Save with mismatched passwords...
+2025-07-25 13:25:26 [TestNG-test-Login Test-1] INFO  testCases.pim.AddEmployeeTest - Validating password mismatch error...
+2025-07-25 13:25:26 [TestNG-test-Login Test-1] INFO  testCases.pim.AddEmployeeTest - Validation for password mismatch passed successfully.
+2025-07-25 13:25:26 [TestNG-test-Login Test-1] INFO  testCases.pim.AddEmployeeTest - ===== Finished test: validatePasswordAndConfirmPasswordMismatch =====
+2025-07-25 13:25:30 [TestNG-test-Login Test-4] INFO  testCases.pim.AddEmployeeTest - Using existing Employee ID: 01715
+2025-07-25 13:25:32 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:25:32 [TestNG-test-Login Test-5] INFO  testCases.pim.AddEmployeeTest - ===== Starting test: verifyDuplicateUsernameNotAllowed =====
+2025-07-25 13:25:34 [TestNG-test-Login Test-4] INFO  testCases.pim.AddEmployeeTest - Attempting to save with duplicate Employee ID...
+2025-07-25 13:25:37 [TestNG-test-Login Test-3] INFO  testCases.pim.AddEmployeeTest - Login fields successfully hidden after disabling the toggle.
+2025-07-25 13:25:37 [TestNG-test-Login Test-3] INFO  testCases.pim.AddEmployeeTest - ===== Finished test: verifyCreateLoginDetailsToggleBehavior =====
+2025-07-25 13:25:38 [TestNG-test-Login Test-2] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+2025-07-25 13:25:41 [TestNG-test-Login Test-5] INFO  testCases.pim.AddEmployeeTest - Attempting to create employee with existing username...
+2025-07-25 13:25:44 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+2025-07-25 13:25:44 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid eca4ff46-1526-4693-9a42-f960236dd83a not found
+2025-07-25 13:25:44 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid eca4ff46-1526-4693-9a42-f960236dd83a not found
+2025-07-25 13:25:50 [TestNG-test-Login Test-4] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:25:50 [TestNG-test-Login Test-4] INFO  testCases.pim.AddEmployeeTest - ===== Starting test: verifyDuplicateEmployeeIdNotAllowed =====
+2025-07-25 13:25:52 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not add attachment: no test is running
+2025-07-25 13:25:52 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 6b4908e3-874b-4178-8e0b-ded315badf4d not found
+2025-07-25 13:25:52 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: test case with uuid 6b4908e3-874b-4178-8e0b-ded315badf4d not found
+2025-07-25 13:25:54 [TestNG-test-Login Test-4] INFO  testCases.pim.AddEmployeeTest - Using existing Employee ID: 01715
+2025-07-25 13:25:58 [TestNG-test-Login Test-4] INFO  testCases.pim.AddEmployeeTest - Attempting to save with duplicate Employee ID...
+2025-07-25 13:25:59 [TestNG-test-Login Test-4] INFO  testCases.pim.AddEmployeeTest - Validation message: Employee Id already exists
+2025-07-25 13:25:59 [TestNG-test-Login Test-4] INFO  testCases.pim.AddEmployeeTest - Duplicate Employee ID validation verified successfully.
+2025-07-25 13:25:59 [TestNG-test-Login Test-4] INFO  testCases.pim.AddEmployeeTest - ===== Finished test: verifyDuplicateEmployeeIdNotAllowed =====
+2025-07-25 13:26:01 [TestNG-test-Login Test-5] ERROR io.qameta.allure.AllureLifecycle - Could not update test case: no test case running
+2025-07-25 13:26:01 [TestNG-test-Login Test-5] INFO  testCases.pim.AddEmployeeTest - ===== Starting test: verifyDuplicateUsernameNotAllowed =====
+2025-07-25 13:26:07 [TestNG-test-Login Test-5] INFO  testCases.pim.AddEmployeeTest - Attempting to create employee with existing username...
+2025-07-25 13:26:08 [TestNG-test-Login Test-5] INFO  testCases.pim.AddEmployeeTest - Duplicate username validation is working as expected.
+2025-07-25 13:26:08 [TestNG-test-Login Test-5] INFO  testCases.pim.AddEmployeeTest - ===== Finished test: verifyDuplicateUsernameNotAllowed =====
