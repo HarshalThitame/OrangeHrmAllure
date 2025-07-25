@@ -11,6 +11,11 @@ pipeline {
     ALLURE_REPORT = "allure-report"
   }
 
+    parameters {
+        choice(name: 'env', choices: ['dev', 'qa', 'stage'], description: 'Select the environment')
+        choice(name: 'browser', choices: ['Chrome', 'Firefox', 'Edge'], description: 'Choose browser')
+    }
+
   stages {
     stage('Checkout') {
       steps {
@@ -32,7 +37,7 @@ pipeline {
 
     stage('Run Tests') {
       steps {
-        bat 'mvn test -Dbrowser=chrome -Denv=qa'
+        bat 'mvn test -Dbrowser=${browser} -Denv=${env}'
       }
     }
 
