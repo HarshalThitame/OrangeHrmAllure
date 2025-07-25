@@ -29,22 +29,23 @@ public class BaseTest {
     @BeforeMethod
     public void setUp() {
         // Load the configuration properties (e.g., browser type, environment, URL, etc.)
-        ConfigReader.loadProperties("qa");
+        String env = System.getProperty("env", "qa");
+        ConfigReader.loadProperties(env);
 
         // Read and trim the 'browser' value from the properties file
-        String browser = ConfigReader.get("browser");
-//        String browser = System.getProperty("browser");
+//        String browser = ConfigReader.get("browser");
+        String browser = System.getProperty("browser");
 
         // Read and trim the 'env' (environment) value from the properties file (e.g., QA, Staging)
-        String env = ConfigReader.get("env");
+        String runEnv = ConfigReader.get("env");
 //        String env = System.getProperty("env", "local");
 
         Allure.label("browser", browser);
-        Allure.label("environment", env);
+        Allure.label("environment", runEnv);
 
 
         // Initialize the WebDriver based on the browser and environment
-        DriverFactory.initDriver(browser, env);
+        DriverFactory.initDriver(browser, runEnv);
 
         // Get the WebDriver instance from the DriverFactory
         driver = DriverFactory.getDriver();
