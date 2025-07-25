@@ -32,7 +32,7 @@ pipeline {
 
     stage('Run Tests') {
       steps {
-        bat 'mvn test -Dbrowser=chrome -Denv=remote'
+        bat 'mvn test -Dbrowser=chrome -Denv=qa'
       }
     }
 
