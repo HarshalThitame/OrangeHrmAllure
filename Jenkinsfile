@@ -37,7 +37,7 @@ pipeline {
 
     stage('Run Tests') {
       steps {
-        bat 'mvn test -Dbrowser=${browser} -Denv=${env}'
+        bat 'mvn test -Dbrowser=${params.browser} -Denv=${params.env}'
       }
     }
 
