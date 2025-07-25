@@ -34,17 +34,17 @@ pipeline {
       parallel {
         stage('Chrome') {
           steps {
-            bat 'mvn test -Dbrowser=chrome -Denv=remote'
+            bat 'mvn test -Dbrowser=chrome -Denv=qa'
           }
         }
         stage('Firefox') {
           steps {
-            bat 'mvn test -Dbrowser=firefox -Denv=remote'
+            bat 'mvn test -Dbrowser=firefox -Denv=qa'
           }
         }
         stage('Edge') {
           steps {
-            bat 'mvn test -Dbrowser=edge -Denv=remote'
+            bat 'mvn test -Dbrowser=edge -Denv=qa'
           }
         }
       }
