@@ -24,9 +24,6 @@ public class LoginTest extends BaseTest {
     @Story("Valid user login successfully")
     public void loginWithValidCredentials() {
 
-        Allure.label("browser", System.getProperty("browser"));
-        Allure.label("env", System.getProperty("env"));
-
         logger.info("===== Starting test: loginWithValidCredentials =====");
 
         LoginPage loginPage = new LoginPage(DriverFactory.getDriver());
@@ -64,8 +61,7 @@ public class LoginTest extends BaseTest {
     @Severity(SeverityLevel.CRITICAL)
     @Story("Show error on required text field")
     public void loginWithEmptyCredentials() {
-        Allure.label("browser", System.getProperty("browser"));
-        Allure.label("env", System.getProperty("env"));
+
         logger.info("===== Starting test: loginWithEmptyCredentials =====");
 
         LoginPage loginPage = new LoginPage(DriverFactory.getDriver());
@@ -102,8 +98,7 @@ public class LoginTest extends BaseTest {
     @Severity(SeverityLevel.CRITICAL)
     @Story("Login should show proper error messages for invalid credentials")
     public void loginWithInvalidData(String username, String password, String expectedUsernameError, String expectedPasswordError) {
-        Allure.label("browser", System.getProperty("browser"));
-        Allure.label("env", System.getProperty("env"));
+
         logger.info("===== Starting test: loginWithInvalidData =====");
         logger.debug("Testing with username: '{}' and password: '{}'", username, password);
         LoginPage loginPage = new LoginPage(DriverFactory.getDriver());

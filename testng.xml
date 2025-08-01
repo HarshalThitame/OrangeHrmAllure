@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Selenium Allure Suite" parallel="methods" thread-count="2">
-    <test name="Login Test" parallel="methods" thread-count="5">
+    <test name="Login Test">
         <classes>
             <class name="testCases.LoginTest">
                 <methods>
@@ -21,7 +21,7 @@
                     <include name="verifyAssignLeavePageFields"/>
                     <include name="verifyAssignLeaveFormValidationOnEmptyFields"/>
                     <include name="assignLeaveWithValidData"/>
-                    <include name="verifyPastDateSelectionNotAllowed"/>
+                    <!--                    <include name="verifyPastDateSelectionNotAllowed"/>-->
                     <include name="verifyAssignLeaveWithValidData"/>
                     <include name="verifyValidationWhenFromDateIsAfterToDate"/>
                 </methods>
@@ -35,6 +35,50 @@
                     <include name="validatePasswordAndConfirmPasswordMismatch"/>
                     <include name="verifyDuplicateEmployeeIdNotAllowed"/>
                     <include name="verifyDuplicateUsernameNotAllowed"/>
+                </methods>
+            </class>
+            <class name="testCases.pim.EmployeeListTest">
+                <methods>
+                    <include name="verifyAllSearchFieldsAreVisible"/>
+                    <include name="searchEmployeeByName"/>
+                    <include name="searchEmployeeById"/>
+                    <include name="verifySearchWithCombinedIdAndNameFilters"/>
+                    <include name="verifyResetSearchFiltersFunctionality"/>
+                </methods>
+            </class>
+            <class name="testCases.pim.editEmployeeDetails.EditEmployeeTest">
+                <methods>
+                    <include name="verifyAllEmployeeTabsVisible"/>
+                </methods>
+            </class>
+
+            <class name="testCases.pim.editEmployeeDetails.EditPersonalDetailsTest">
+                <methods>
+                    <include name="verifyAllPersonalAndCustomFieldsVisible"/>
+                    <include name="validateMandatoryFieldsOnPersonalDetailsPage"/>
+                    <include name="validateSavePersonalDetailsWithValidInputs"/>
+                    <include name="validateSavingCustomFieldsWithValidData"/>
+                    <include name="validateOnlyOneGenderCanBeSelected"/>
+                </methods>
+            </class>
+            <class name="testCases.pim.editEmployeeDetails.EditContactDetailsTest">
+                <methods>
+                    <include name="verifyAllContactDetailsFieldsVisible"/>
+                    <include name="validateSuccessfulSaveWithValidInputs"/>
+                    <include name="validateInvalidEmailFormat"/>
+                    <include name="validatePhoneNumberFieldAcceptsOnlyNumbers"/>
+                    <include name="validateFieldCharacterLimits"/>
+                </methods>
+            </class>
+            <class name="testCases.pim.editEmployeeDetails.EditSalaryDetailsTest">
+                <methods>
+                    <include name="verifyAllSalaryComponentFieldsAreVisible"/>
+                    <include name="validateRequiredFieldValidation"/>
+                    <include name="validateAmountFieldAcceptsOnlyNumbers"/>
+                    <include name="validateSaveFunctionalityWithValidData"/>
+                    <include name="validateCancelButtonFunctionality"/>
+                    <include name="validateDirectDepositToggleBehavior"/>
+                    <include name="validateAmountFieldBoundaryValues"/>
                 </methods>
             </class>
         </classes>

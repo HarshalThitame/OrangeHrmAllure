@@ -19,4 +19,16 @@ public class TestDataProvider {
                 {"wronguser", "wrongpass", "", ""}, // invalid credentials (no "Required" if filled)
         };
     }
+
+    @DataProvider(name = "amountBVAData")
+    public Object[][] amountTestData() {
+        return new Object[][]{
+                {"39999", true, "Should be within Min/Max values"},
+                {"40000", false, ""},
+                {"40001", false, ""},
+                {"49999", false, ""},
+                {"50000", false, ""},
+                {"50001", true, "Should be within Min/Max values"}
+        };
+    }
 }

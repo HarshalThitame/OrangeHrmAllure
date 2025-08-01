@@ -3,9 +3,7 @@ package testCases.pim;
 import base.BaseTest;
 import config.ConfigReader;
 import factory.DriverFactory;
-import io.qameta.allure.Severity;
-import io.qameta.allure.SeverityLevel;
-import io.qameta.allure.Story;
+import io.qameta.allure.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
@@ -16,6 +14,8 @@ import pageObjects.pim.AddEmployeePage;
 import pageObjects.pim.PIMPage;
 import utils.RetryAnalyzer;
 
+@Epic("PIM Module")
+@Feature("Add Employee Functionality")
 public class AddEmployeeTest extends BaseTest {
 
     private static final Logger logger = LoggerFactory.getLogger(AddEmployeeTest.class);

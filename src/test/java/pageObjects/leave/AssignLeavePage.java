@@ -83,14 +83,6 @@ public class AssignLeavePage extends BasePage {
         return isElementVisible(assignButton);
     }
 
-    public boolean isElementVisible(By locator) {
-        try {
-            wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-            return driver.findElement(locator).isDisplayed();
-        } catch (TimeoutException e) {
-            return false;
-        }
-    }
 
     @Step("Click on 'Assign' button")
     public void clickAssignButton() {
@@ -143,17 +135,21 @@ public class AssignLeavePage extends BasePage {
 
     @Step("Select From Date: {date}")
     public void selectFromDate(String day, String month, String year) {
+        int dayInt = Integer.parseInt(day);
+        String dayString = String.valueOf(dayInt);
         wait.until(ExpectedConditions.elementToBeClickable(fromDateCalendarIcon)).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='oxd-calendar-selector-month-selected']//i[@class='oxd-icon bi-caret-down-fill oxd-icon-button__icon']"))).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(String.format("//li[normalize-space()='%s']", month)))).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='oxd-calendar-selector-year-selected']//i[@class='oxd-icon bi-caret-down-fill oxd-icon-button__icon']"))).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(String.format("//li[normalize-space()='%s']", year)))).click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(String.format("//*[normalize-space()='%s']", day)))).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(String.format("//*[normalize-space()='%s']", dayString)))).click();
 
     }
 
     @Step("Select To Date: {date}")
     public void selectToDate(String day, String month, String year) {
+        int dayInt = Integer.parseInt(day);
+        String dayString = String.valueOf(dayInt);
 //        wait.until(ExpectedConditions.elementToBeClickable(toDateCalendarIcon)).click();
 //        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[3]/div/div[2]/div/div[2]/div/div/i"))).click();
 //        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(String.format("//li[normalize-space()='%s']", month)))).click();
@@ -176,15 +172,6 @@ public class AssignLeavePage extends BasePage {
         textarea.sendKeys(comment);
     }
 
-    @Step("Get success toast message after assigning leave")
-    public String getSuccessToastMessage() {
-        try {
-            WebElement toast = wait.until(ExpectedConditions.visibilityOfElementLocated(successToastMessage));
-            return toast.getText().trim();
-        } catch (TimeoutException e) {
-            return "No success toast appeared";
-        }
-    }
 
     @Step("Get invalid date range validation message")
     public String getInvalidDateRangeMessage() {

@@ -224,13 +224,5 @@ public class AddEmployeePage extends BasePage {
         }
     }
 
-    public boolean isElementVisible(By locator) {
-        try {
-            return wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).isDisplayed();
-        } catch (TimeoutException e) {
-            return false;
-        }
-    }
-
 
 }
